@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reverse Clan (REV)</title>
+  <style>
+    :root {
+      --bg-dark: #000;
+      --text-light: #fff;
+      --accent: #e0e0e0;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+    nav {
+      background-color: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+    nav a {
+      color: var(--text-light);
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+    section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2rem;
+      border-bottom: 2px solid var(--accent);
+      margin-bottom: 1.5rem;
+    }
+    .members-group {
+      margin-bottom: 2rem;
+    }
+    .member {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin: 0.5rem 0;
+    }
+    .member img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid white;
+    }
+    .game {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 3rem;
+    }
+    .game img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+    .hero {
+      background-color: black;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+    .logo {
+      width: 100px;
+      height: 100px;
+      animation: spin 6s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .hero h1 {
+      color: white;
+      font-size: 3rem;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+    .discord-button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.8rem 1.5rem;
+      background-color: #5865f2;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .discord-button:hover {
+      background-color: #4752c4;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="REV Logo" class="logo" />
+    <h1>Reverse Clan (REV)</h1>
+    <a href="https://discord.gg/Tn2rNfr5" class="discord-button" target="_blank">Join our Discord</a>
+  </div>
+
+  <nav>
+    <a href="#start">Start</a>
+    <a href="#about">Über uns</a>
+    <a href="#members">Mitglieder</a>
+    <a href="#games">Games</a>
+  </nav>
+
+  <section id="start">
+    <h2>Willkommen</h2>
+    <p>Willkommen beim <strong>Reverse Clan (REV)</strong> – einer starken Community für Minecraft und Valorant. Wir stehen für Zusammenhalt, Fairplay und Leidenschaft fürs Gaming.</p>
+  </section>
+
+  <section id="about">
+    <h2>Über uns</h2>
+    <p>Der REV Clan wurde mit dem Ziel gegründet, Gamer aus verschiedenen Bereichen zusammenzubringen. Ob in hitzigen Valorant-Matches oder kreativen Minecraft-Projekten – wir geben immer 100%.</p>
+    <p><em>„We don’t rewind – We reverse the game.“</em></p>
+  </section>
+
+  <section id="members">
+    <h2>Mitglieder</h2>
+
+    <div class="members-group">
+      <h3>Leader</h3>
+      <div class="member"><img src="https://i.pravatar.cc/40?u=leader" alt="Avatar" /> Medix </div>
+    </div>
+
+    <div class="members-group">
+      <h3>Eventplanung</h3>
+      <div class="member"><img src="https://i.pravatar.cc/40?u=event" alt="Avatar" /> Shiqqi </div>
+    </div>
+
+    <div class="members-group">
+      <h3>Clan Mitglieder</h3>
+      <div class="member"><img src="https://i.pravatar.cc/40?u=sn1per" alt="Avatar" /> 13Mio </div>
+      <div class="member"><img src="https://i.pravatar.cc/40?u=block" alt="Avatar" /> reaxyy </div>
+      <div class="member"><img src="https://i.pravatar.cc/40?u=kappa" alt="Avatar" /> tusk </div>
+    </div>
+
+    <div class="members-group">
+      <h3>Friends</h3>
+      <div class="member"><img src="https://i.pravatar.cc/40?u=fox" alt="Avatar" /> Diamants Po-ral </div>
+      <div class="member"><img src="https://i.pravatar.cc/40?u=guest" alt="Avatar" /> RobinWille </div>
+    </div>
+  </section>
+
+  <section id="games">
+    <h2>Games</h2>
+
+    <div class="game">
+      <h3>Valorant</h3>
+      <p>Taktisches 5v5 FPS – Teamarbeit, Aim und Map-Kenntnis sind der Schlüssel zum Erfolg. Unsere Valorant-Spieler decken jede Rolle ab und trainieren regelmäßig.</p>
+      <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1172470/ss_7a8a2f5c2a354e52a6c8d385e8b1f90e4cc6bda0.1920x1080.jpg" alt="Valorant Screenshot">
+    </div>
+
+    <div class="game">
+      <h3>Minecraft</h3>
+      <p>Ob Großbauprojekte, Community-Server oder PvP – Minecraft ist unsere kreative Spielwiese. Zusammen bauen wir epische Welten und erleben Abenteuer.</p>
+      <img src="https://www.minecraft.net/content/dam/minecraft/pmp/minecraft-net-og.jpg" alt="Minecraft Screenshot">
+    </div>
+  </section>
+</body>
+</html>
